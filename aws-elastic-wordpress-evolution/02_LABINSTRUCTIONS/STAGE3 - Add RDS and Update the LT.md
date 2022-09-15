@@ -126,7 +126,7 @@ DBEndpoint=`echo $DBEndpoint | sed -e 's/^"//' -e 's/"$//'`
 Restore the database export into RDS using
 
 ```
-mysql -h $DBEndpoint -u $DBUser -p$DBPassword $DBName < a4lWordPress.sql 
+mysql -h $DBEndpoint -u $DBUser -p $DBPassword $DBName < a4lWordPress.sql 
 ```
 
 ## Change the WordPress config file to use RDS
